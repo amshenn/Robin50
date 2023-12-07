@@ -1,6 +1,6 @@
 import AcmeLogo from '@/app/ui/acme-logo';
 import LoginForm from '@/app/ui/login-form';
-import RealLoginForm from './login-form';
+//import RealLoginForm from './login-form';
  
 export default function LoginPage() {
   return (
@@ -12,7 +12,6 @@ export default function LoginPage() {
           </div>
         </div>
         <LoginForm />
-        <RealLoginForm />
       </div>
     </main>
   );

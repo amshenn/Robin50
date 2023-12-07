@@ -27,8 +27,8 @@ export default function Page() {
               <span className="sr-only">Robin50</span>
               <Image
                 className="h-400 w-400"
-                height={18}
-                width={32}
+                height={72}
+                width={128}
                 src="/Logo.png"
                 alt="Robin50 Logo"
               />
@@ -52,7 +52,7 @@ export default function Page() {
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+            <a href="/login" className="text-sm font-semibold leading-6 text-gray-900">
               Log in <span aria-hidden="true">&rarr;</span>
             </a>
           </div>
@@ -65,8 +65,8 @@ export default function Page() {
                 <span className="sr-only">Robin50</span>
                 <Image
                   className="h-400 w-400"
-                  height={18}
-                  width={32}
+                  height={72}
+                  width={128}
                   src="/Logo.png"
                   alt="Robin50 Logo"
                 />
@@ -130,7 +130,7 @@ export default function Page() {
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
-                href="#"
+                href="/login"
                 className="rounded-md bg-green-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-green-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600"
               >
                 Get started <span aria-hidden="true">→</span>

@@ -9,7 +9,15 @@ const nextConfig = {
                 pathname: "/drive/u/0/folders/1N_26DsjyN5KOvrwyVeUJWAiyvn0NE3vN"
             }
         ]
-    }
+    },
+    module: {
+        rules: [
+            {
+                test: /\.html$/,
+                use: 'html-loader',
+            },
+        ],
+    },
 };
 
 module.exports = nextConfig;
