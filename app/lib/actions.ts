@@ -1,6 +1,7 @@
 import { signIn } from '@/auth';
 import { AuthError } from 'next-auth';
 
+/*
 export async function createInvoice(prevState: State, formData: FormData) {
   // Validate form using Zod
   const validatedFields = CreateInvoice.safeParse({
@@ -75,7 +76,7 @@ export async function updateInvoice(
   redirect('/dashboard/invoices');
 }
 
-
+*/
 export async function authenticate(
   prevState: string | undefined,
   formData: FormData,

@@ -1,3 +1,5 @@
+/*
+
 import { CustomerField } from '@/app/lib/definitions';
 import Link from 'next/link';
 import {
@@ -12,7 +14,7 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
   return (
     <form action={dispatch}>
       <div className="rounded-md bg-gray-50 p-4 md:p-6">
-        {/* Customer Name */}
+        { Customer Name }
         <div className="mb-4">
           <label htmlFor="customer" className="mb-2 block text-sm font-medium">
             Choose customer
@@ -46,7 +48,7 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
       </div>
     </div>
 
-        {/* Invoice Amount */}
+        { Invoice Amount }
         <div className="mb-4">
           <label htmlFor="amount" className="mb-2 block text-sm font-medium">
             Choose an amount
@@ -67,7 +69,7 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
           </div>
         </div>
 
-        {/* Invoice Status */}
+        { Invoice Status }
         <fieldset>
           <legend className="mb-2 block text-sm font-medium">
             Set the invoice status
@@ -120,3 +122,5 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
     </form>
   );
 }
+
+*/
