@@ -17,6 +17,8 @@ const config: Config = {
           500: '#0070F3',
           600: '#2F6FEB',
         },
+        'main': '#358185',
+        'main-hover': '#358185a6',
       },
     },
     keyframes: {
