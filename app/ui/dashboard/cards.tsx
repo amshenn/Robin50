@@ -1,4 +1,3 @@
-import { fetchCardData } from '@/app/lib/data';
 import {
   BanknotesIcon,
   ClockIcon,
@@ -15,17 +14,11 @@ const iconMap = {
 };
 
 export default async function CardWrapper() {
-  const {
-    numberOfInvoices,
-    numberOfCustomers,
-    totalPaidInvoices,
-    totalPendingInvoices,
-  } = await fetchCardData();
  
   return (
     <>
       <Card title="Porfolio Value" value="$6,851.27" type="invoices" />
-      <Card title="Buying Power" value={totalPendingInvoices} type="collected" />
+      <Card title="Buying Power" value="$1,256.32" type="collected" />
     </>
   );
 }
