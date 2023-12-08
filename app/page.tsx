@@ -6,16 +6,19 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Image from 'next/image'
 import Link from 'next/link'
 
+// Stores and array of dictionaries with the names and routes of each page in our code
 const navigation = [
   { name: 'Dashboard', href: '/dashboard' },
-  { name: 'Transfer', href: '/transfer' },
-  { name: 'Transactions', href: '/transactions' },
-  { name: 'Research', href: '/research' },
-  { name: 'Notes', href: '/notes' },
-  { name: 'News', href: '/news' },
+  { name: 'Transfer', href: '/dashboard/transfer' },
+  { name: 'Transactions', href: '/dashboard/transaction' },
+  { name: 'Research', href: '/dashboard/research' },
+  { name: 'Notes', href: '/dashboard/notes' },
+  { name: 'News', href: '/dashboard/news' },
 ]
 
+// Code for our page
 export default function Page() {
+  // This implements mobile responsiveness in our code
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
@@ -26,11 +29,12 @@ export default function Page() {
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Robin50</span>
               <Image
-                className="h-400 w-400"
-                height={72}
-                width={128}
+                className="h-500 w-700"
+                height={120}
+                width={150}
                 src="/Logo.png"
                 alt="Robin50 Logo"
+                style={roundedImageStyle}
               />
             </a>
           </div>
@@ -69,6 +73,7 @@ export default function Page() {
                   width={128}
                   src="/Logo.png"
                   alt="Robin50 Logo"
+                  style={roundedImageStyle}
                 />
               </a>
               <button
@@ -120,21 +125,27 @@ export default function Page() {
             }}
           />
         </div>
-        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+        <div className="mx-auto max-w-xl py-32 sm:py-48 lg:py-56">
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
               Robin50
             </h1>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
-              Financial Services
+            <p className="mt-6 text-xl leading-8 text-gray-600">
+              Where finance meets profit
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
-              <a
+              <Link
                 href="/login"
-                className="rounded-md bg-green-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-green-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600"
+                className="flex-1 rounded-md bg-[#4e8288] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#4e8288a6] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg-[#4e8288]"
               >
                 Get started <span aria-hidden="true">→</span>
-              </a>
+              </Link>
+              <Link
+                href="/login/register"
+                className="flex-1 rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              >
+                Register <span aria-hidden="true">→</span>
+              </Link>
             </div>
           </div>
         </div>
@@ -154,3 +165,9 @@ export default function Page() {
     </div>
   )
 }
+
+// This styles an element --> rounded corners
+export const roundedImageStyle = {
+  borderRadius: '0.2rem',
+  overflow: 'hidden',
+};
